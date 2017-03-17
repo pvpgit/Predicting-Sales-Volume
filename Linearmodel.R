@@ -1,5 +1,5 @@
 ##Read the existing product attributes file
-existing_product_attributes <- read.csv(paste("https://github.com/pvpgit/Predicting-Sales-Volume/tree/masterexisting_product_attributes.csv", sep=""), header = TRUE)
+existing_product_attributes <- read.csv(paste("https://github.com/pvpgit/Predicting-Sales-Volume/tree/master/existing_product_attributes.csv", sep=""), header = TRUE)
 str(existing_product_attributes)
 
 existing_product_attributes$"X.Product.Type." <- NULL
