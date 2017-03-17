@@ -1,4 +1,4 @@
-existing_product_attributes <- read.csv(paste("https://github.com/pvpgit/Predicting-Sales-Volume/existing product attributes.csv", sep=""), header = TRUE)
+existing_product_attributes <- read.csv(paste("https://github.com/pvpgit/Predicting-Sales-Volume/tree/master/existing_product_attributes.csv", sep=""), header = TRUE)
 install.packages("e1071")
 library("e1071")
 existing_product_attributes$"X.Product.Type." <- NULL
@@ -41,7 +41,7 @@ summary(svm_model_after_tunepoly)
 ##summary(svm_model_after_tuneradial)
 
 ##Preprocess the new data
-new_product_attributes <- read.csv(paste("https://github.com/pvpgit/Predicting-Sales-Volume/new product attributes.csv", 
+new_product_attributes <- read.csv(paste("https://github.com/pvpgit/Predicting-Sales-Volume/tree/master/new_product_attributes.csv", 
 sep=""), header = TRUE)
 new_product_attributes$"X.Product.Type." <- NULL
 new_product_attributes$"X.Best.Sellers.Rank." <- NULL
