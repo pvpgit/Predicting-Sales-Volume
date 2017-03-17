@@ -2,7 +2,7 @@ install.packages("randomForest")
 library(randomForest)
 
 ##Read the existing product attributes file
-existing_product_attributes <- read.csv(paste("https://github.com/pvpgit/Predicting-Sales-Volume/existing product attributes.csv", sep=""), header = TRUE)
+existing_product_attributes <- read.csv(paste("https://github.com/pvpgit/Predicting-Sales-Volume/tree/master/existing_product_attributes.csv", sep=""), header = TRUE)
 str(existing_product_attributes)
 
 existing_product_attributes$"X.Product.Type." <- NULL
@@ -43,7 +43,7 @@ table(testset[,5],predictions)
 mean(testset[,5]==predictions)
 
 ##New data
-new_product_attributes <- read.csv(paste("https://github.com/pvpgit/Predicting-Sales-Volume/new product attributes.csv", sep=""), header = TRUE)
+new_product_attributes <- read.csv(paste("https://github.com/pvpgit/Predicting-Sales-Volume/tree/master/new_product_attributes.csv", sep=""), header = TRUE)
 str(new_product_attributes)
 new_product_attributes$"X.5.Star.Reviews." <- NULL
 new_product_attributes$"X.Product.Type." <- NULL
